@@ -54,13 +54,13 @@ function updateResult(result) {
     if(finalResult === randomNumber){
         wins++;
         $("#wins").html("<p>Wins : " + wins + "</p>");
-        alert("you won");
+        alert("You won!!");
         generateNewValues();
     }
     else if(finalResult > randomNumber){
         losses++;
         $("#losses").html("<p>Losses : " + losses + "</p>");
-        alert("You went over");
+        alert("Sorry, you went over. You lose");
         generateNewValues();
     }
 
